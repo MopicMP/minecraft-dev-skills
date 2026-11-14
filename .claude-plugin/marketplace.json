@@ -1,0 +1,16 @@
+{
+  "name": "mosaicary",
+  "description": "Agent skills for Minecraft developers.",
+  "owner": {
+    "name": "MopicMP",
+    "url": "https://mosaicary.com"
+  },
+  "plugins": [
+    {
+      "name": "minecraft-skins",
+      "source": "./",
+      "description": "Minecraft skins for coding agents: Mojang skin upload, slim and classic arms, layouts, catalogues",
+      "version": "1.0.0"
+    }
+  ]
+}
