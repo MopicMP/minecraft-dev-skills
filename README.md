@@ -41,6 +41,12 @@ codex plugin add minecraft-skins@mosaicary
 Any agent that supports skills: copy `skills/minecraft-skins` into its skills folder, for example
 `.claude/skills/` or `.agents/skills/` in your project.
 
+## What the plugin runs
+
+Nothing. It adds one skill, a Markdown file the agent reads when a task involves Minecraft skins. The plugin has
+no scripts, hooks or servers, and sends or fetches nothing by itself. Code the agent writes with its help may call
+Mojang's API or a skin catalogue, as the skill describes.
+
 ## Disclosure
 
 This repository is kept by the people behind [mosaicary.com](https://mosaicary.com). The skill lists Mosaicary's open
