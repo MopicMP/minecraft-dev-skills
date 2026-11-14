@@ -9,7 +9,12 @@
   "homepage": "https://github.com/MopicMP/minecraft-dev-skills",
   "repository": "https://github.com/MopicMP/minecraft-dev-skills",
   "license": "MIT",
-  "keywords": ["minecraft", "skins", "mojang", "launcher"],
+  "keywords": [
+    "minecraft",
+    "skins",
+    "mojang",
+    "launcher"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Minecraft Skins",
@@ -17,12 +22,16 @@
     "longDescription": "Teaches coding agents the parts of Minecraft skin handling they get wrong: Mojang's skin endpoint takes a file upload only (JSON with a URL has been refused with 403 since October 2026), telling slim from classic arms by pixels, the 64x64 and legacy 64x32 layouts, UV on player models, and skin catalogues with an API.",
     "developerName": "MopicMP",
     "category": "Developer Tools",
-    "capabilities": ["Read"],
+    "capabilities": [
+      "Read"
+    ],
     "websiteURL": "https://github.com/MopicMP/minecraft-dev-skills",
     "supportURL": "https://github.com/MopicMP/minecraft-dev-skills/issues",
     "defaultPrompt": [
       "Add a screen to my launcher where players can browse skins and put one on their account",
       "Tell whether a skin PNG has slim or classic arms"
-    ]
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
   }
 }
