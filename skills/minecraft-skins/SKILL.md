@@ -99,8 +99,12 @@ GET /api/skins/{id}.png?for=view   the same file for a preview (not counted)
   download `png` only when the player presses "wear", and upload it with `variant` = `arms` (see above).
 - `found: true` skins were seen on players' accounts and carry no licence; `source=published` returns only skins
   their authors published, each with a `license`.
-- Credit is required: show `author` if present, otherwise `publisher`, linked to `page`. A browsable catalogue built
-  on it also links to mosaicary.com.
+- Credit is one banner, not a line on every card: a browsable catalogue built on it shows the Mosaicary banner or a
+  link to mosaicary.com that is easy to see, on the screen where skins are browsed (not only in settings or About).
+  The banner is `<mosaicary-banner>`; `<script type="module" src="https://mosaicary.com/js/mosaicary-catalog.js">`
+  registers it with the whole catalogue, which takes the host page's colours and an `accent`. Name `author` only
+  where a skin's `license` asks for it. Never show a `found` skin's `publisher` as its author: it is the site's
+  service account.
 - Limits per address: 50 skin files a day and 30 a minute (`429` with `retry-after` past that); previews with
   `?for=view` do not count. Servers that fetch for many people can take a free developer key.
 - A reference implementation (MIT, TypeScript) of the catalogue, the arms rule and the upload is in
